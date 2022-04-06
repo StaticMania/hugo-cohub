@@ -1,0 +1,60 @@
+.testimonial {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  @include desktop {
+    padding: 50px 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $black, $alpha: 0.5);
+    top: 0;
+    left: 0;
+  }
+  &-content {
+    background: $white;
+    padding: 50px 70px 40px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    @include desktop {
+      text-align: center;
+    }
+
+    @include mobile {
+      padding: 30px;
+    }
+    @include mobile-xs {
+      padding: 30px 15px 15px;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 25px;
+      margin-bottom: 35px;
+    }
+
+    blockquote {
+      line-height: 32px;
+      font-family: $primary-font;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: $text-color-dark;
+      cite {
+        color: #666666;
+        display: block;
+        margin-top: 30px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: $secondary-font;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.footer {
+  padding: 100px 0;
+  background: #f7f8fc;
+  @include desktop {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  @include tablet {
+    text-align: center;
+  }
+
+  &-logo {
+    margin-bottom: 30px;
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 20px;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include desktop {
+      padding-bottom: 10px;
+      justify-content: center;
+    }
+
+    img {
+      width: 15%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+
+        &:not(:first-child) {
+          padding-left: 50px;
+
+          @include desktop {
+            padding-left: 30px;
+          }
+        }
+
+        a {
+          font-size: 12px;
+          color: $text-color-dark;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  &-text-block {
+    @include desktop {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-family: $primary-font;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+
+    @include desktop {
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    @include desktop {
+      padding-bottom: 10px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        padding-left: 15px;
+        display: inline-block;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        a {
+          color: #666666;
+          transition: all 0.3s ease-in-out;
+          text-decoration: none;
+
+          i {
+            font-size: 1.5rem;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  &-copyright-text {
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.5;
+
+    @include desktop {
+      justify-content: center;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 20px;
+
+        a {
+          font-size: 12px;
+          color: #666666;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  li:hover > a {
+    color: $primary-color;
+  }
+}

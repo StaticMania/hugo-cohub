@@ -1,0 +1,54 @@
+.quotes {
+  text-align: center;
+  &-slider {
+    &-item {
+      outline: none;
+      h2 {
+        font-size: 40px;
+        font-weight: 500;
+        display: block;
+        line-height: 50px;
+        margin: 0 140px 20px 140px;
+        @include tablet {
+          margin: 0 50px 20px 50px;
+        }
+        @include mobile {
+          margin: 0 10px 20px 10px;
+          font-size: 30px;
+          line-height: 40px;
+        }
+        @include mobile-xs {
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: -40px;
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          background: $text-color;
+          text-indent: -999999999px;
+          border-radius: 50%;
+          width: 3px;
+          height: 3px;
+          outline: 0;
+        }
+      }
+    }
+    .slick-dots li.slick-active button {
+      background: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.story {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &-content {
+    @include tablet {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  &-slider {
+    .slider-item {
+      outline: none;
+      img {
+        width: 100%;
+        transition: 0.5s $site-ease;
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: -40px;
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          background: $text-color;
+          text-indent: -999999999px;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          outline: 0;
+        }
+      }
+    }
+    .slick-dots li.slick-active button {
+      background: $primary-color;
+    }
+  }
+}

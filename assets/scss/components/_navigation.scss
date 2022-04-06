@@ -1,0 +1,153 @@
+.main-nav {
+  padding: 30px 35px 20px;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  @include desktop {
+    background: $white;
+    padding: 30px;
+  }
+  @include mobile {
+    padding: 15px 30px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white;
+        padding-left: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        padding-right: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        font-family: $primary-font;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+        @include desktop {
+          color: $text-color-dark;
+        }
+      }
+    }
+
+    @include desktop {
+      align-items: center;
+    }
+  }
+
+  .navbar-brand {
+    .logo-main {
+      display: none;
+      @include desktop {
+        display: block;
+      }
+    }
+    .logo-white {
+      display: block;
+      @include desktop {
+        display: none;
+      }
+    }
+    img {
+      width: 100px;
+    }
+  }
+
+  .navbar-toggler {
+    outline: 0;
+    padding: 0;
+
+    .icon-bar {
+      width: 25px;
+      height: 2px;
+      background: $secondary-color;
+      transition: all 0.2s;
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+    }
+
+    &.collapsed {
+      .icon-bar {
+        &:nth-child(1) {
+          transform: rotate(0);
+        }
+
+        &:nth-child(2) {
+          opacity: 1;
+          filter: alpha(opacity=1);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+
+  &.nav-bg {
+    background: $white;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
+    top: 0;
+    @include mobile {
+      top: 10px;
+      padding: 20px 20px;
+    }
+    .navbar-brand {
+      .logo-main {
+        display: block;
+      }
+
+      .logo-white {
+        display: none;
+      }
+    }
+
+    .nav-link {
+      color: $text-color-dark !important;
+
+      &::before {
+        background: darken($color: $white, $amount: 10) !important;
+      }
+    }
+
+    .account-list {
+      li {
+        a {
+          color: $white;
+          background: $secondary-color;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &-colored {
+    @extend .nav-bg;
+    box-shadow: none;
+  }
+}

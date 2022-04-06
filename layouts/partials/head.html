@@ -1,0 +1,39 @@
+  <head>
+    <meta charset="utf-8" />
+    <title>{{.Title}}</title>
+
+    {{ "<!--Meta For No Index-->" | safeHTML }}
+    <meta name="robots" content="noindex, Nofollow, Noimageindex">
+
+    {{ "<!--mobile responsive meta-->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    {{hugo.Generator}}
+    {{ "<!-- Critical CSS -->" | safeHTML }}
+    {{$style :=  resources.Get "scss/critical.scss" | resources.ToCSS | resources.Minify }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet" />
+  
+
+    {{"<!-- Favicon -->" | safeHTML}}
+    <link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />
+    <link rel="icon" href="{{"images/favicon.png" | absURL}}" type="image/x-icon" />
+
+    {{ with .Site.Params.googleAnalytics }}
+    {{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', '{{ . }}');
+      
+    </script>
+    {{ end }}
+
+    
+  </head>
+

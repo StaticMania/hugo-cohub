@@ -1,0 +1,41 @@
+{{ define "main"}}
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h2>{{ .Title}}</h2>
+          <p>{{ .Params.subTitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="story">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="story-content">
+          {{.Content}}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="story-slider">
+          {{range .Params.sliderImage }}
+            <div class="slider-item">
+              <img src="{{ .image | absURL }}" alt="images">
+            </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ partial "gallery.html" . }}
+{{ partial "testimonial.html" . }}
+{{ partial "client.html" . }}
+{{ partial "investor.html" . }}
+{{ partial "contactAddress.html" . }}
+
+
+{{end}}

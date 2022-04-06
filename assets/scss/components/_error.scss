@@ -1,0 +1,121 @@
+.error {
+  background: #f0f2f5;
+  position: relative;
+  overflow: hidden;
+  &-content {
+    padding: 270px 0 245px;
+    text-align: center;
+
+    @include desktop-lg {
+      padding: 200px 0;
+    }
+
+    @include desktop {
+      padding: 150px 0 100px;
+    }
+    @include mobile {
+      padding: 120px 0 60px;
+    }
+
+    h2 {
+      font-size: 170px;
+      display: inline-block;
+      margin-bottom: 80px;
+
+      @include desktop {
+        font-size: 100px;
+        margin-bottom: 60px;
+      }
+
+      @include tablet {
+        font-size: 80px;
+        margin-bottom: 50px;
+      }
+
+      @include mobile {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+
+      @include mobile-xs {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 30px;
+      font-weight: 500;
+      color: $text-color-dark;
+      @include mobile-xs {
+        font-size: 24px;
+      }
+    }
+
+    form {
+      padding: 30px 0 70px;
+      width: 50%;
+      margin: 0 auto;
+
+      @include tablet {
+        width: 80%;
+      }
+      @include mobile {
+        padding: 30px 0 40px;
+      }
+
+      .input-group {
+        .form-control {
+          background: white;
+          padding: 20px 50px 20px 40px;
+          border-radius: 50px;
+          color: $text-color;
+          position: relative;
+          z-index: 0;
+          border: none;
+
+          @include mobile-xs {
+            padding: 10px 50px 10px 20px;
+          }
+        }
+
+        .input-search {
+          position: absolute;
+          top: 50%;
+          left: 95%;
+          transform: translate(-95%, -50%);
+
+          @include mobile-xs {
+            left: 90%;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 30px;
+            i {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+
+    &-link {
+      a {
+        background: $primary-color;
+        padding: 15px 30px;
+        color: $white;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: capitalize;
+        text-decoration: none;
+
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

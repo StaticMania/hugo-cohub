@@ -1,0 +1,173 @@
+.section {
+  padding: 100px 0;
+  @include desktop {
+    padding: 50px 0;
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    @include mobile {
+      margin-bottom: 70px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background: $text-color;
+      border-radius: 5px;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h2 {
+      font-size: 40px;
+      color: #252525;
+      margin-bottom: 15px;
+
+      @include tablet {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      width: 66%;
+      margin: 0 auto;
+
+      @include mobile-xs {
+        width: 72%;
+      }
+
+      @include mobile {
+        width: 90%;
+      }
+
+      @include tablet {
+        font-size: 16px;
+      }
+
+      @include desktop {
+        width: 100%;
+      }
+    }
+  }
+}
+.page-header {
+  text-align: center;
+  padding-bottom: 100px;
+  @include desktop-lg {
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: #252525;
+    margin-bottom: 15px;
+
+    @include tablet {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    width: 66%;
+    margin: 0 auto;
+
+    @include mobile-xs {
+      width: 72%;
+    }
+
+    @include mobile {
+      width: 90%;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+}
+.about {
+  padding-top: 150px;
+  @include mobile {
+    padding-top: 120px;
+  }
+}
+// bloge page-title
+.page-title {
+  padding: 200px 0 50px;
+  text-align: center;
+  @include desktop-lg {
+    padding: 130px 0 50px;
+  }
+  @include desktop {
+    padding: 140px 0 50px;
+  }
+  @include mobile {
+    padding: 110px 0 30px;
+  }
+  @include mobile-xs {
+    padding: 110px 0 0px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  .breadcrumb {
+    padding: 0;
+    background: transparent;
+    justify-content: center;
+  }
+
+  .breadcrumb-item {
+    font-family: $primary-font;
+
+    a {
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+}
+
+.privacy-policy {
+  background-color: $border-color;
+  padding: 150px 0;
+  @include mobile {
+    padding-bottom: 40px;
+  }
+  &-content {
+    padding: 50px;
+    background-color: $white;
+    border-radius: 20px;
+    @include desktop {
+      padding: 30px;
+    }
+  }
+  &-item {
+    margin-bottom: 40px;
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: $text-color;
+    }
+  }
+}

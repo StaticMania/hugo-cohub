@@ -1,0 +1,60 @@
+.clients {
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #8080802e;
+  margin: 100px 0;
+  @include desktop {
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    margin: 50px 0 30px 0;
+  }
+  &-slider {
+    position: relative;
+    padding: 50px 0;
+    @include mobile {
+      padding: 20px 0;
+    }
+    &-item {
+      position: relative;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      bottom: -50px;
+      display: flex;
+      justify-content: center;
+      @include mobile {
+        bottom: -30px;
+      }
+      li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          background: $text-color;
+          text-indent: -999999999px;
+          border-radius: 50%;
+          width: 3px;
+          height: 3px;
+          outline: 0;
+        }
+      }
+    }
+    .slick-dots li.slick-active button {
+      background: $primary-color;
+    }
+  }
+}

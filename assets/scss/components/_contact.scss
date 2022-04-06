@@ -1,0 +1,101 @@
+.contact {
+  &-aria {
+    background: #222029;
+    padding: 100px;
+    @include desktop {
+      text-align: center;
+      padding: 50px;
+    }
+    @include mobile {
+      padding: 30px;
+    }
+    @include mobile-xs {
+      padding: 30px 10px;
+    }
+    h3 {
+      font-size: 25px;
+      line-height: 38px;
+      font-weight: 300;
+      color: $white;
+    }
+
+    ul {
+      padding: 0;
+      margin: 30px 0;
+
+      li {
+        list-style: none;
+        a {
+          color: $white;
+          line-height: 32px;
+          font-size: 19px;
+          font-weight: 400;
+          text-decoration: underline;
+          font-family: $primary-font;
+        }
+      }
+    }
+
+    p {
+      color: $white;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 20px;
+
+      @include desktop {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  #map {
+    height: 100%;
+
+    @include desktop {
+      height: 500px;
+    }
+    @include tablet {
+      height: 400px;
+    }
+    @include mobile {
+      height: 300px;
+    }
+    @include mobile-xs {
+      height: 200px;
+    }
+  }
+  &-section {
+    padding: 140px 0 100px 0;
+    @include mobile {
+      padding: 120px 0 50px 0;
+    }
+  }
+  &-form {
+    text-align: center;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      @include mobile-xs {
+        font-size: 24px;
+        line-height: 40px;
+      }
+    }
+    form {
+      .form-control {
+        padding: 17px 20px;
+        margin-bottom: 30px;
+        @include mobile-xs {
+          margin-bottom: 20px;
+        }
+      }
+      .form-check {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

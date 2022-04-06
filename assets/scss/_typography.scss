@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Open+Sans:300,400,600,700&display=swap');
+
+body {
+  font-family: $secondary-font;
+  font-size: 16px;
+  color: $text-color;
+  background: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color-dark;
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: $text-color;
+  line-height: 26px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 58px;
+
+}
+
+h2 {
+  font-size: 33px;
+  line-height: 45px;
+  font-weight: 300;
+
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 400;
+  color: $text-color-dark;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}

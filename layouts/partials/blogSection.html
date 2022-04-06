@@ -1,0 +1,35 @@
+{{with .Site.Data.blogSection}}
+{{if .enable}}
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>{{.title}}</h2>
+          <p>
+              {{.subtitle}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {{ range first 3 (where $.Site.RegularPages "Type" "blog") }}
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-post">
+          <img src="{{ .Params.featureImage | absURL }}" alt="blog-images">
+          <div class="blog-content">
+            <h3><a href="{{ .Permalink }}">{{.Title}}</a></h3>
+            <p>{{ truncate 75 .Summary }}</p>
+            <a class="more" href="{{ .Permalink }}">Read more <span>⟶</span></a>
+          </div>
+        </article>
+      </div>
+      {{end}}
+      <div class="col-12 text-center">
+        <a href="{{.buttonTarget | absURL}}" class="btn btn-primary">View blog page</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}

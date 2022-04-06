@@ -1,0 +1,43 @@
+.service {
+  background: #f7f8fc;
+  padding: 50px 0;
+  @include mobile {
+    padding: 20px 0;
+  }
+  &-item {
+    background: $white;
+    padding: 50px 30px 50px;
+    text-align: center;
+    border: 1px solid #0000001c;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    @include mobile {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: $text-color-dark;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+    h3 {
+      text-transform: capitalize;
+      line-height: 26px;
+    }
+    p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 26px;
+      margin-bottom: 0;
+    }
+    &:hover {
+      transform: scale(1.05);
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+}

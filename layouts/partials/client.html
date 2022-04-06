@@ -1,0 +1,24 @@
+{{ with .Site.Data.clients}}
+{{ if .enable}}
+<section class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>{{ .title}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="clients-slider">
+          {{ range .clients}}
+          <div class="clients-slider-item">
+            <img src="{{ .image | absURL}}" alt="{{ .image}}">
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}

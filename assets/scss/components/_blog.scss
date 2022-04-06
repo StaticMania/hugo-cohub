@@ -1,0 +1,227 @@
+.blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include mobile {
+    padding: 30px 0;
+  }
+  &-post {
+    margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 15px;
+    }
+    img {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &-content {
+    padding: 30px 20px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-radius: 0px 5px 5px 5px;
+
+    h3 {
+      @include mobile-xs {
+        margin-top: 20px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 26px;
+        color: $text-color-dark;
+        text-transform: capitalize;
+
+        @include mobile-xs {
+          font-size: 15px;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+
+      font-weight: 500;
+    }
+
+    a.more {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $primary-font;
+      text-transform: capitalize;
+      transition: 0.3s $site-ease;
+
+      span {
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &-pagination {
+    margin-top: 40px;
+
+    .pagination {
+      justify-content: center;
+
+      .page-item {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        .page-link {
+          font-size: 18px;
+          border-radius: 5px;
+          border: none;
+          padding: 12px 20px;
+          color: $text-color-dark;
+          font-weight: 300;
+          transition: all 0.3s ease;
+          font-family: $primary-font;
+        }
+
+        &.active {
+          .page-link {
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.post {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 90px;
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+  @include mobile {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  &-title {
+    padding-bottom: 20px;
+
+    h2 {
+      font-size: 33px;
+      line-height: 35px;
+
+      @include mobile {
+        font-size: 30px;
+      }
+      @include mobile-xs {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &-meta {
+    padding-bottom: 50px;
+    @include mobile {
+      padding-bottom: 20px;
+    }
+
+    p {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-image {
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+  }
+
+  &-body {
+    text-align: left;
+    padding-top: 30px;
+    p {
+      line-height: 32px;
+      margin-bottom: 30px;
+      @include mobile-xs {
+        font-size: 15px;
+      }
+    }
+
+    blockquote {
+      p{
+        font-size: 20px;
+        line-height: 30px;
+        color: $text-color-dark;
+        margin-bottom: 40px;
+        font-family: $primary-font;
+        font-weight: 400;
+        @include mobile-xs {
+          font-size: 18px;
+        }
+      }
+    }
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 20px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        font-weight: 300;
+      }
+    }
+  }
+
+  &-list {
+    text-align: left;
+    li {
+      font-size: 22px;
+      @include mobile-xs {
+        font-size: 18px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  p{
+    .tags{
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+      transition: all .3s ease-in-out;
+      display: inline-block;
+      text-decoration: none;
+      &:nth-child(2) {
+        margin-left: 5px !important;
+      }
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      &:hover{
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    } 
+  }
+}

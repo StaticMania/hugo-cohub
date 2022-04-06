@@ -1,0 +1,31 @@
+{{ define "main"}}
+<section class="error">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!--start error-content -->
+        <div class="error-content">
+          <h2>404 Error</h2>
+          <p>Oops! Page Not Found</p>
+          <form action="#">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search again...">
+              <div class="input-search">
+                <a href="#"> <i class="ti-search"></i></a>
+              </div>
+            </div>
+          </form>
+          <div class="error-content-link">
+            <a href="{{.Site.BaseURL}}">
+              <i class="ti-arrow-left"></i>
+              back to home
+            </a>
+          </div>
+        </div>
+        <!--end error-content -->
+      </div>
+    </div>
+  </div>
+</section>
+
+{{end}}

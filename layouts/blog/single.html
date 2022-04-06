@@ -1,0 +1,26 @@
+{{define "main"}}
+<article class="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="post-title">
+          <h2>{{.Title}}</h2>
+        </div>
+        <div class="post-meta">
+          <p><span>{{ .PublishDate.Format "January 2, 2006" }}</span> in 
+            {{ range (.GetTerms "tags") }}
+              <a class="tags" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+          </p>
+        </div>
+        <div class="post-image">
+          <img src="{{ .Params.featureImage | absURL}}" alt="feature-image">
+        </div>
+        <div class="post-body">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{end}}

@@ -1,0 +1,30 @@
+<!-- Mark up for Site Navigation Section-->
+<header class="header">
+  <nav class="main-nav navbar navbar-expand-lg {{ if not $.IsHome }}main-nav-colored{{ end }}">
+    <div class="container-fluid">
+      <a href="{{.Site.BaseURL}}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL}}" alt="site-logo" />
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse nav-list"
+        id="mainNav"
+      >
+        <ul class="navbar-nav ml-auto">
+          {{ $currentPage := . }}
+          {{ $menu := .Site.Menus.main}}
+          {{range $index, $element := $menu}}
+          <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+             <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
+          </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

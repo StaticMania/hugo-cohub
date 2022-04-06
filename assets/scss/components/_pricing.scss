@@ -1,0 +1,76 @@
+.pricing {
+  padding: 100px 0;
+  @include desktop {
+    padding: 50px 0;
+  }
+  @include mobile-xs {
+    padding: 30px 0;
+  }
+  &-wraper {
+    transition: all 0.3s ease-in-out;
+    .pricing-item {
+      background: $white;
+      padding: 40px 10px;
+      text-align: center;
+      border: 1px solid #0000001c;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+      h3 {
+        margin-bottom: 20px;
+      }
+      span.price {
+        font-size: 70px;
+        font-weight: 400;
+        font-family: $primary-font;
+        color: $text-color-dark;
+        transition: all 0.3s ease-in-out;
+        sup {
+          font-size: 30px;
+        }
+        display: block;
+        margin-bottom: 20px;
+      }
+      &-badge {
+        position: absolute;
+        background: $primary-color;
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: 700;
+        color: $white;
+        text-transform: lowercase;
+        font-family: $primary-font;
+        border-radius: 5px;
+        top: 20px;
+        right: 20px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    a {
+      border: none;
+      width: 100%;
+      border-radius: 0px 0px 6px 6px;
+      font-size: 13px;
+      padding: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      @include desktop {
+        margin-bottom: 20px;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      a {
+        background-color: darken($color: $primary-color, $amount: 10);
+        transform: translateY(0);
+      }
+      span.price {
+        color: $primary-color;
+      }
+    }
+  }
+}

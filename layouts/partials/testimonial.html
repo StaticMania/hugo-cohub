@@ -1,0 +1,21 @@
+{{ with .Site.Data.testimonial}}
+{{ if .enable}}
+<section class="quotes">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="quotes-slider">
+          {{range .testimonial}}
+
+          <div class="quotes-slider-item">
+            <h2>{{ .testimonialDetails }}</h2>
+            <span>-{{ .author }}</span>
+          </div>
+        {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}

@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "CoHub"
+license = "MIT"
+licenselink = "https://github.com/StaticMania/coHub-hugo/blob/master/LICENSE"
+description = "CoHub is a completely responsive multi-purpose layout with an advanced plan appropriate for a business. The layout is highlighting various unique, really special sites, settling on it an ideal decision to feature your work."
+homepage = "https://cohub-hugo.netlify.app/"
+tags = ["clean", "minimal", "blog", "responsive", "personal", "google analytics", "bootstrap", "portfolio", "white", "modern", "contact form", "creative"]
+features = ['bootstrap 4', 'responsive design', 'blog', 'responsive', 'minimal', 'hugo-theme', 'portfolio', 'creative', 'contact-form']
+min_version = "0.41.0"
+
+[author]
+  name = "Static Mania"
+  homepage = "https://staticmania.com/"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

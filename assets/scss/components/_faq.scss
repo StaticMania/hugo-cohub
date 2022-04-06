@@ -1,0 +1,49 @@
+.faq {
+  padding: 100px 0;
+  @include desktop {
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+
+  .text-block {
+    h2 {
+      @include tablet {
+        margin-bottom: 40px;
+      }
+      @include mobile-xs {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-content {
+    margin: 0 auto 30px;
+    @include tablet {
+      text-align: center;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    @include mobile-xs {
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-weight: 500;
+      margin: 0 0 10px;
+      @include desktop {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  }
+}

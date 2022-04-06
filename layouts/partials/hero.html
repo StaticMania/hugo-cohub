@@ -1,0 +1,27 @@
+{{with .Site.Data.hero}}
+{{if .enable}}
+  <section class="hero" style="background-image: url( {{ .heroBGimg }} );">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="hero-content">
+            <h1>{{.title | safeHTML}}</h1>
+            <p>
+              {{.subtitle}}
+            </p>
+
+            <div class="hero-video-player">
+              <div class="hero-video-player-icon">
+                <a class="popup-vimeo" href="{{ .heroVideo }}">
+                    <i class="ti-control-play"></i>
+                </a>
+              </div>
+              {{ .herosVideoDesc | safeHTML }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{end}}
+{{end}}

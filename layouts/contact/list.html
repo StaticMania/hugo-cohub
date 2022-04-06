@@ -1,0 +1,45 @@
+{{define "main"}}
+<section class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto col-md-12">
+        <div class="page-header">
+          <h2> {{ .Title }}</h2>
+          <p>{{.Params.subTitle}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="contact-form">
+          <h2>Contact Form</h2>
+          <form id="contact-form" class="row" action="{{ .Site.Params.formspreeURL }}" method="POST">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="validationCustom02" required="" name="email" placeholder="Your Email">
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="message"
+                placeholder="Message here…"></textarea>
+            </div>
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="checkbox" required>
+                <label class="form-check-label" for="gridCheck">
+                  I agree that my submitted data is being collected and stored.
+                </label>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary" id="contact-form-button">Send Message</button>
+            </div>
+            <p id="contact-form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

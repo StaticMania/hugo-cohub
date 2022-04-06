@@ -1,0 +1,29 @@
+{{with .Site.Data.faq}}
+{{if .enable}}
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="faq-content text-block">
+          <h2> {{.title}} </h2>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="row">
+         {{ range .faq}}
+          <div class="col-lg-6">
+            <div class="faq-content">
+              <h3>{{.question}}</h3>
+              <p>
+                  {{.answer}}
+              </p>
+            </div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
