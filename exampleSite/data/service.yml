@@ -1,0 +1,38 @@
+---
+enable: true
+title: "Why Choose us?"
+subtitle: >
+          We enable people and businesses to work where they want, 
+          when they want and how they want.
+services:
+  - name: "largest Network"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-view-grid"
+  - name: "All Sizes And Budget"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-infinite"
+  - name: "Dedicated Account Manager"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-help-alt"
+  - name: "Easy Payment"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-credit-card"
+  - name: "Dedicated Locker"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-lock"
+  - name: "Personalization"
+    description: >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
+                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+    icon: "ti-image"
+---

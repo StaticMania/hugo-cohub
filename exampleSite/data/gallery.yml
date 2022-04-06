@@ -1,0 +1,12 @@
+---
+title : "Take a look at Our Exibhition"
+enable: true
+subtitle: >
+        We are the world’s largest provider of flexible workspace solutions,
+        with customers including some of the most successful entrepreneurs
+galleryImage: 
+ - image: "images/gallery/gallery01.jpg"
+ - image: "images/gallery/gallery02.jpg"
+ - image: "images/gallery/gallery03.jpg"
+ - image: "images/gallery/gallery04.jpg"
+---

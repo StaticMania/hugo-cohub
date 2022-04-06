@@ -1,0 +1,21 @@
+---
+enable: true
+title: "Frequently Asked Questions"
+faq:
+  - question: "Q. How do I apply?"
+    answer: >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur?
+  - question: "Q. Where can I find out about funding?"
+    answer: >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur?
+  - question: "Q. How can I make a change to my application?"
+    answer: >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit excepturi 
+            eaque quidem recusandae facere obcaecati optio, perferendis iusto maxime eligendi!
+  - question: "Q. What are entry requirements?"
+    answer: >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur?
+  - question: "Q. How do I get a reference?"
+    answer: >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, consectetur?
+---

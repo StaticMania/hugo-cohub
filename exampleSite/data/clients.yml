@@ -1,0 +1,11 @@
+---
+enable: true
+title: "Featured In"
+clients:
+  - image: "images/client/clients01.png"
+  - image: "images/client/clients02.png"
+  - image: "images/client/clients03.png"
+  - image: "images/client/clients01.png"
+  - image: "images/client/clients03.png"
+  - image: "images/client/clients02.png"
+---

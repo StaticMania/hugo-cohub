@@ -1,0 +1,89 @@
+baseURL = 'https://cohub-hugo.netlify.app'
+languageCode = 'en-us'
+paginate = 6
+theme= "coHub"
+title = 'coHub'
+ 
+[Menu]
+  # Main Menu
+  [[menu.Main]]
+  name = "Exibhition"
+  url= "#gallery"
+  weight = 1
+  [[menu.Main]]
+  name = "Feature"
+  url= "#service"
+  weight = 1
+  [[menu.Main]]
+  name = "About"
+  url= "/about/"
+  weight = 3
+  [[menu.Main]]
+  name = "Blog"
+  url= "#blog"
+  weight = 4
+  [[menu.Main]]
+  name = "Pricing"
+  url= "#pricing"
+  weight = 5
+  [[menu.Main]]
+  name = "FAQ"
+  url= "#faq"
+  weight = 6
+  [[menu.Main]]
+  name = "Contact"
+  url= "/contact/"
+  weight = 7
+
+  # Sitemap Menu
+  [[menu.sitemap]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 1
+  [[menu.sitemap]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 2
+
+[params]
+  aboutPageURL = "blog"
+  contactLink = "contact"
+  copyright = "© {year} coHub. Inc."
+  formspreeURL = "https://formspree.io/mbjwlead"
+  googleAnalytics = "G-JZ95FEWF9K"
+  logo = "images/logo.png"
+  footerlogo = "images/logo.png"
+  footerDescription = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia ab, natus fugiat voluptas saepe ipsum animi officiis in molestiae?"
+
+  [params.address]
+  address = "115 W 18th St. <br>  New York, NY 10011"
+  email = "hello@example.com"
+  openingDesc = "Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days."
+  openingHours = "We are open from 7am — 7pm week days."
+  phone = "+(448) 833 5272 332"
+
+  [params.map]
+  APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
+  latitude = "45.4502528"
+  longitude = "-122.783407"
+  pinImage = "images/pin.png"
+
+  # Socail icons
+  [[params.social]]
+  icon = "ti-facebook"
+  url = "https://www.facebook.com/"
+  weight = 1
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  url = "https://twitter.com/"
+  weight = 2
+  [[params.social]]
+  icon = "ti-dribbble"
+  url = "https://dribbble.com/"
+  weight = 3
+  [[params.social]]
+  icon = "ti-instagram"
+  url = "https://www.instagram.com/"
+  weight = 4
+  
+  
