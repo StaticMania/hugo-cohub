@@ -18,7 +18,7 @@ Checkout the live demo [here](https://cohub-hugo.netlify.app/)
 
 ## Installation
 
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add git@github.com:StaticMania/coHub.hugo.git themes/coHub`.
+1. Add the repository into your Hugo Project repository as a submodule, `git submodule add git@github.com:StaticMania/hugo-coHub.git themes/coHub`.
 2. Copy the `data`, `content`, `static`, `resources` & `config.toml` files from the `exampleSite` directory and paste it on you Hugo Project repository/directory. From the site home directory:
 
    cp -a themes/coHub/exampleSite/\* .
