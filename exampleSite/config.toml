@@ -48,8 +48,8 @@ title = 'coHub'
 [params]
   aboutPageURL = "blog"
   contactLink = "contact"
-  copyright = "© {year} coHub. Inc."
-  formspreeURL = "https://formspree.io/mbjwlead"
+  copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
+  fabFormURL =  "https://fabform.io/f/u00kv3-"
   googleAnalytics = "G-JZ95FEWF9K"
   logo = "images/logo.png"
   footerlogo = "images/logo.png"

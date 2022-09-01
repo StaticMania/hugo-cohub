@@ -30,7 +30,7 @@
           </ul>
         </div>
         <div class="footer-copyright-text">
-          <p> {{ replace .Site.Params.copyright "{year}" now.Year }} </p>
+          <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
           <ul>
             {{ $sitemap := .Site.Menus.sitemap }}
 						{{ range $sitemap }}
@@ -59,7 +59,7 @@
 <script src="{{"vendor/match-height/match-height.js" | absURL}}"></script>
 <script src="{{"vendor/magnific-popup/magnific-popup.min.js" | absURL}}"></script>
 <script src="{{"vendor/g-map/gmap.js" | absURL}}"></script>
-{{ $formhandler := resources.Get "js/formhandler.js" | minify}} 
-<script src="{{ $formhandler.Permalink}}"></script>
+<!-- {{ $formhandler := resources.Get "js/formhandler.js" | minify}} 
+<script src="{{ $formhandler.Permalink}}"></script> -->
 {{ $script := resources.Get "js/script.js" | minify}} 
 <script src="{{ $script.Permalink}}"></script>
