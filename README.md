@@ -32,7 +32,7 @@ Checkout the live demo [here](https://cohub-hugo.netlify.app/)
 - Blog Support.
 - Well formatted code.
 - Easy Customization.
-- Formspree Contact form.
+- FabForm.io [static website forms](https://fabform.io).
 - Google Analytics.
 - Crafted for Personal Portfolio
 
