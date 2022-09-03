@@ -3,7 +3,7 @@
 
 name = "CoHub"
 license = "MIT"
-licenselink = "https://github.com/StaticMania/coHub-hugo/blob/master/LICENSE"
+licenselink = "https://github.com/StaticMania/hugo-cohub/blob/master/LICENSE"
 description = "CoHub is a completely responsive multi-purpose layout with an advanced plan appropriate for a business. The layout is highlighting various unique, really special sites, settling on it an ideal decision to feature your work."
 homepage = "https://cohub-hugo.netlify.app/"
 tags = ["clean", "minimal", "blog", "responsive", "personal", "google analytics", "bootstrap", "portfolio", "white", "modern", "contact form", "creative"]
