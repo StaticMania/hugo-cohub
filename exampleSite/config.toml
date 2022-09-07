@@ -49,7 +49,9 @@ title = 'coHub'
   aboutPageURL = "blog"
   contactLink = "contact"
   copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
-  fabFormURL =  "https://fabform.io/f/u00kv3-"
+  # We're using fabform.io for form handling, paste your fabform.io endpoint below
+  # You can get a free account by visiting https://fabform.io
+  fabformURL  = "https://fabform.io/f/<insert-fabform.io-endpoint-here>"
   googleAnalytics = "G-JZ95FEWF9K"
   logo = "images/logo.png"
   footerlogo = "images/logo.png"
