@@ -49,7 +49,7 @@
 {{ "<!-- Non Critical CSS -->" | safeHTML }}
 {{$style :=  resources.Get "scss/non-critical.scss" | resources.ToCSS | resources.Minify }}
 <link href="{{ $style.Permalink }}" rel="stylesheet" />
-<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.APIkey }}&libraries=geometry">
+<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.Map.APIkey }}&libraries=geometry">
 </script>
 {{ "<!-- VENDOR JS -->" | safeHTML }}
 <script src="{{"vendor/jQuery/jquery.min.js" | absURL }}"></script>
