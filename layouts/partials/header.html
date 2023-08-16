@@ -20,7 +20,7 @@
           {{ $menu := .Site.Menus.main}}
           {{range $index, $element := $menu}}
           <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-             <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
+             <a class="nav-link scroll-to" href="{{ .URL | relURL }}">{{.Name}}</a>
           </li>
           {{end}}
         </ul>
