@@ -7,7 +7,7 @@ title = 'coHub'
 [Menu]
   # Main Menu
   [[menu.Main]]
-  name = "Exibhition"
+  name = "Exhibition"
   url= "#gallery"
   weight = 1
   [[menu.Main]]
@@ -46,6 +46,7 @@ title = 'coHub'
   weight = 2
 
 [params]
+  # theme_overrides = "css/overrides.css"
   aboutPageURL = "blog"
   contactLink = "contact"
   copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
@@ -68,7 +69,7 @@ title = 'coHub'
   longitude = "-122.783407"
   pinImage = "images/pin.png"
 
-  # Socail icons
+  # Social icons
   [[params.social]]
   icon = "ti-facebook"
   url = "https://www.facebook.com/"
