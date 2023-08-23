@@ -33,11 +33,11 @@
           <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
           <ul>
             {{ $sitemap := .Site.Menus.sitemap }}
-						{{ range $sitemap }}
-						  <li >
+            {{ range $sitemap }}
+              <li >
                 <a  href="{{ .URL | absURL }}">{{ .Name }}</a>
               </li>
-						{{ end }}
+            {{ end }}
           </ul>
         </div>
       </div>
