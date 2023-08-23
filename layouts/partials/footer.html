@@ -19,7 +19,7 @@
         <div class="footer-icon">
           <ul>
             {{ range $socialIcon }}
-            <li >
+            <li>
               <a target="_blank" href="{{ .url }}">
                 <i
                   class="{{ .icon }}">
@@ -34,8 +34,8 @@
           <ul>
             {{ $sitemap := .Site.Menus.sitemap }}
 						{{ range $sitemap }}
-						  <li >
-                <a  href="{{ .URL | absURL }}">{{ .Name }}</a>
+						  <li>
+                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
               </li>
 						{{ end }}
           </ul>
