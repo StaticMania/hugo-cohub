@@ -27,6 +27,12 @@
               </a>
             </li>
             {{ end }}
+            {{ with .Site.Params.address.email }}
+            <li><a target="_blank" href="mailto:{{ . }}"><i class="ti-email"></i></a></li>
+            {{ end }}
+            {{ with .Site.Params.address.phone }}
+            <li><a target="_blank" href="tel:{{ . }}"><i class="ti-mobile"></i></a></li>
+            {{ end }}
           </ul>
         </div>
         <div class="footer-copyright-text">
