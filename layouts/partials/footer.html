@@ -19,23 +19,29 @@
         <div class="footer-icon">
           <ul>
             {{ range $socialIcon }}
-						<li >
+            <li>
               <a target="_blank" href="{{ .url }}">
                 <i
-									class="{{ .icon }}">
+                  class="{{ .icon }}">
                 </i>
               </a>
-						</li>
-						{{ end }}
+            </li>
+            {{ end }}
+            {{ with .Site.Params.address.email }}
+            <li><a target="_blank" href="mailto:{{ . }}"><i class="ti-email"></i></a></li>
+            {{ end }}
+            {{ with .Site.Params.address.phone }}
+            <li><a target="_blank" href="tel:{{ . }}"><i class="ti-mobile"></i></a></li>
+            {{ end }}
           </ul>
         </div>
         <div class="footer-copyright-text">
           <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
           <ul>
             {{ $sitemap := .Site.Menus.sitemap }}
-            {{ range $sitemap }}
-              <li >
-                <a  href="{{ .URL | absURL }}">{{ .Name }}</a>
+						{{ range $sitemap }}
+						  <li>
+                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
               </li>
             {{ end }}
           </ul>
