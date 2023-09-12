@@ -15,7 +15,11 @@
     {{ "<!-- Critical CSS -->" | safeHTML }}
     {{$style :=  resources.Get "scss/critical.scss" | resources.ToCSS | resources.Minify }}
     <link href="{{ $style.Permalink }}" rel="stylesheet" />
-  
+
+    {{ with .Site.Params.theme_overrides }}
+    {{ $theme_overrides := resources.Get . | minify | fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $theme_overrides.RelPermalink }}" integrity="{{ $theme_overrides.Data.Integrity }}">
+    {{ end }}
 
     {{"<!-- Favicon -->" | safeHTML}}
     <link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />
