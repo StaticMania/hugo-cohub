@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-12">
         <div class="footer-logo">
-          <img src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
+          <img class="img-fluid" src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
         </div>
         <p class="footer-description">
           {{ .Site.Params.footerDescription}}
@@ -43,7 +43,7 @@
 						  <li>
                 <a href="{{ .URL | absURL }}">{{ .Name }}</a>
               </li>
-						{{ end }}
+            {{ end }}
           </ul>
         </div>
       </div>
