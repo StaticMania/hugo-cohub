@@ -20,13 +20,15 @@
         </div>
       </div>
       <div class="col-lg-6">
+        {{ with .Params.slideImage }}
         <div class="story-slider">
-          {{range .Params.sliderImage }}
+          {{range . }}
             <div class="slider-item">
               <img src="{{ .image | absURL }}" alt="images">
             </div>
           {{end}}
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
