@@ -4,7 +4,7 @@ paginate = 6
 theme= "coHub"
 title = 'coHub'
  
-[Menu]
+
   # Main Menu
   [[menu.Main]]
   name = "Exhibition"
