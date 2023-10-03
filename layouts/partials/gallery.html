@@ -1,5 +1,5 @@
-{{with .Site.Data.gallery}}
-{{if .enable}}
+{{ with .Site.Data.gallery }}
+{{ if .enable }}
 <section class="gallery" id="gallery">
   <div class="container">
     <div class="row">
@@ -18,14 +18,14 @@
         <div class="col-md-6">
           <div class="gallery-item">
             <a href="{{ .image | absURL }}" data-source="{{ .image | absURL }}"
-                title="Exibhition 01">
+               title="{{ .description }}">
                 <img src="{{ .image | absURL }}" alt="gallery-images">
             </a>
           </div>
         </div>
-      {{end }}
+      {{ end }}
     </div>
   </div>
 </section>
-{{end}}
-{{end}}
+{{ end }}
+{{ end }}
