@@ -13,8 +13,8 @@
             {{ $address.address | safeHTML }}
           </h3>
           <ul>
-            <li> <a href="mailto:{{ $address.email }}">{{ $address.email }}</a></li>
-            <li><a href="tel:{{ $address.phone}}">{{ $address.phone }}</a></li>
+            {{ with $address.email }}<li><i class="ti-email"></i>&nbsp;<a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $address.phone }}<li><i class="ti-mobile"></i>&nbsp;<a href="tel:{{ . }}">{{ . }}</a></li>{{ end }}
           </ul>
           <p>
             {{ $address.openingDesc }}
