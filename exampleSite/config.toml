@@ -13,7 +13,7 @@ title = 'coHub'
   [[menu.Main]]
   name = "Feature"
   url= "#service"
-  weight = 1
+  weight = 2
   [[menu.Main]]
   name = "About"
   url= "/about/"
